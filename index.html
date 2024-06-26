@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url(https://fonts.google.com/specimen/Figtree);
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body{
+      background-color: hsl(47, 88%, 63%);
+      height: auto;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .card{
+      width: 300px;
+      height: 450px;
+      background-color: white;
+      margin: 150px 0 100px auto;
+      border-radius: 20px;
+      box-shadow: 7px 7px black;
+      border-style: solid;
+      border-width: 2px 0px 0px 2px;
+      border-color: black;
+      padding: 15px 5px 5px 5px;
+      flex-direction: column;
+    }
+    .image-container{
+      display: flex;
+      justify-content: center;
+      
+    }
+    img{
+      border-radius: 10px;
+      width: 275px;
+    }
+    .learning-button{
+      margin-top: 20px;
+      margin-left: 10px;
+      border-radius: 5px;
+      background-color:hsl(47, 88%, 63%) ;
+      width: 80px;
+      border-width: 0px ;
+      height: 30px;
+    }
+    .text-container{
+      margin-left: 10px;
+      margin-right: 10px;
+      font-family: 'Figtree';
+    }
+    .bold-text{
+      font-size: 23px;
+      /* font-style: ExtraBold ; */
+      font-weight: bolder;
+      color: hsl(47, 88%, 63%) ;
+
+    }
+    .light-text{
+      width: 275px;
+      color: hsl(0, 0%, 50%);
+      font-size: 18px ;
+    }
+    .holder-container{
+      width: 150px;
+      height: 35px;
+      margin-top: 20px;
+      margin-left: 10px;
+      display: flex;
+      align-items: center;
+      font-family: 'Figtree';
+
+    }
+    .holder-container img{
+      display: block;
+      height: 30px;
+      width: 30px;
+      margin-right: 10px;
+    }
+
+    @media (max-width: 375px) {
+
+      body{
+        justify-content: center;
+        display: flex;
+      }
+      .card {
+        width: auto;
+        height: auto;
+        margin: 150px 35px 100px;
+      }
+
+      .image-container img {
+        width: 100%;
+      }
+
+      .light-text {
+        width: 100%;
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <div class="card">
+      <div class="image-container">
+        <img alt="Product Image" src="./design/desktop-design - Copy.jpg" />
+      </div>
+      <button class="learning-button"><b>Learning</b></button>
+      <div class="text-container">
+        <p style="font-size: 12px;">Published 21 Dec 2023</p>
+        <p class="bold-text"><b>HTML & CSS foundations</b></p>
+        <p class="light-text">
+          These languages are the backbone of every website, defining structure, content, and presentation.
+        </p>
+      </div>
+      <div class="holder-container">
+        <img src="./assets/images/image-avatar.webp" alt="image-avatar">
+        <p><b>Greg Hooper</b></p>
+      </div>
+    </div>
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/rohit246-ambitious">Rohit Mhatre</a>.
+  </div>
+</main>
+</body>
+</html>
